@@ -21,18 +21,20 @@ echo.
 rem Menu options for the operations
 echo 1)Turn on Hotspot
 echo 2)Turn off Hotspot
-echo 3)Show Hotspot status
+echo 3)View Hotspot status
 echo 4)Change Hotspot Username and Password
-echo 5)Exit
+echo 5)View Hotspot Password
+echo 6)Exit
 echo.
 echo.
 echo.
 echo.
 
 rem Enter functions to the menu optoins
-choice /n /c 12345 /m "Please select an option from the above menu: "
+choice /n /c 123456 /m "Please select an option from the above menu: "
 
-if errorlevel 5 goto exit
+if errorlevel 6 goto exit
+if errorlevel 5 goto key
 if errorlevel 4 goto Password
 if errorlevel 3 goto status
 if errorlevel 2 goto off
@@ -114,4 +116,22 @@ choice /n /c 12 /m "Please select an option from the above menu: "
 if errorlevel 2 goto exit
 if errorlevel 1 goto start
 
+:key
+cls
+
+netsh wlan show hostednetwork setting=security
+echo.                
+echo.                
+echo Menu            
+echo.                
+echo 1)Go back to the Main Menu
+echo 2)Exit          
+echo.                
+echo.                
+echo.                
+choice /n /c 12 /m "Please select an option from the above menu: "
+					 
+if errorlevel 2 goto exit
+if errorlevel 1 goto start
+					
 :exit
