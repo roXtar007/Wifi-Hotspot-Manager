@@ -10,3 +10,10 @@ Changing username and password of Hotspot and check status of Hotspot it is enab
 ## Preview
 
 ![Hotspot manager](https://github.com/roXtar007/Wifi-Hotspot-Manager/blob/master/Preview/Preview.png?raw=true)
+
+
+## Download
+
+Download the program with the link given below
+
+<a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/roXtar007/Wifi-Hotspot-Manager">Download here</a>
